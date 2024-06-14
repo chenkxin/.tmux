@@ -1,3 +1,4 @@
 #!/usr/bin/sh
-ln -s -T .tmux/.tmux.conf ~/.tmux.conf
+path=$(cd $(dirname $0);pwd)
+ln -s -T ${path}/.tmux.conf $HOME/.tmux.conf
 cp .tmux.conf.local ~/
